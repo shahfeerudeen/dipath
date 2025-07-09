@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "types": ["@babel/core"],
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowJs": true,              // ✅ Allow JS files
+    "checkJs": false              // Optional: Set to true to lint JS
+  },
+  "include": ["src", "src/Components/Buttons/Image.jsx"]
+}

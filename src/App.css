@@ -1,0 +1,126 @@
+
+  body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-12 {
+  gap: 48px;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.px-2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.min-width-50 {
+  min-width: 50px;
+}
+
+.min-width-30 {
+  min-width: 30px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button{  
+  width: 90% !important;
+  background:var(--gray-500) !important;
+  color:var(--brand-100) !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  height: 50px !important;
+  text-transform: none !important;
+  margin-top: 10px !important;
+}
+
+
+.table{
+  padding: 1,;
+  font-size: 1rem !important;
+  width: 100;
+
+}
+
+.ag-theme-alpine .ag-cell {
+  font-size: 14px;
+  color: #000 !important;
+}
+
+.ag-theme-alpine .ag-row {
+  height: 40px !important;
+}
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #01E4BE, #41BAFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.my-container {
+  color:var(--brand-100) !important;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+

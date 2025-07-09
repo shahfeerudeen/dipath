@@ -1,0 +1,39 @@
+
+  :root {
+    --brand-950: #000000;
+    --brand-900: #0d1445;
+    --brand-800: #131e67;
+    --brand-700: #182581;
+    --brand-600: #1b298f;
+    --brand-500: #6d7be3;
+    --brand-400: #a1aaed;
+    --brand-300: #c7cdf4;
+    --brand-200: #e5e8fa;
+    --brand-100: #f2f3fd;
+    --brand-green: #16A34A;
+    --dark-green: #0d1445;
+    --dark-light-green: #01E4BE;
+    --dark-yellow:#D1D369;
+    --grape: #754BF4;
+    --pink: #D946EF;
+    --blue: #16ABEB;
+    --green:#6EC209;
+    --sidebar:#ECEEF7;
+    
+    
+    --gray-950: #24272D;
+    --gray-900: #363B44;
+    --gray-800: #3D444F;
+    --gray-700: #4C5564;
+    --gray-600: #576272;
+    --gray-500: #6C798B;
+    --gray-400: #8A95A6;
+    --gray-300: #B4BBC5;
+    --gray-200: #D7DBE0;
+    --gray-100: #EDEEF1;
+    --gray-50: #F6F7F9;
+    --gray-0: #ffffff;
+  
+    --link-blue: #016FF4;
+  }
+
