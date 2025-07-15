@@ -22,7 +22,7 @@ const AuthLayout = () => {
         sx={{
           width: { xs: "0%", md: "40%", lg: "60%", xl: "60%" },
           display: { xs: "none", sm: "none", md: "block" },
-          backgroundColor: color || "var(--brand-900)",
+          backgroundColor: color || "var(--brand-500)",
         }}
         className="my-container"
       >
