@@ -94,7 +94,7 @@ function LoginPage() {
   return (
     <Box sx={{ mb: 4, mt: 3, display: "flex", flexDirection: "column" }}>
       <Box sx={{ mb: 3, display: "flex", flexDirection: "column" }}>
-        <Typography variant="heading">Welcome Back!</Typography>
+        <Typography variant="heading">hi hello we are yeejai Welcome Back!</Typography>
         <Typography variant="bodySmall" color="text.secondary">
           Version 6.8H
         </Typography>
