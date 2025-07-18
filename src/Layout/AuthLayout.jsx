@@ -4,10 +4,10 @@ import { Outlet, Navigate } from "react-router-dom"; // ✅ Add Navigate
 import Footer from "../Views/Footer/Footer";
 import Image from "../Components/Buttons/Image";
 import logo from "../Assets/logo.png";
-import { useColor } from "../Context/ColorContext";
+
 
 const AuthLayout = () => {
-  const { color } = useColor();
+ 
   return (
     <Box
       sx={{
@@ -22,7 +22,7 @@ const AuthLayout = () => {
         sx={{
           width: { xs: "0%", md: "40%", lg: "60%", xl: "60%" },
           display: { xs: "none", sm: "none", md: "block" },
-          backgroundColor: color || "var(--brand-200)",
+          backgroundColor: "var(--brand-200)",
         }}
         className="my-container"
       >
