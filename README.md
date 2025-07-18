@@ -54,7 +54,7 @@ lrvlrvdvkndkvrkgrkgkrmnlknvfknrkfvncknvdngkrgnkrfnrknkrnklvmlrmrkrvnkrvfvnklffvn
 lgfmflgmlf
 vljkfj
 rlgvjkfdjv
-vnvknlmflrfjrkfvkvnkvn:wq!
+vnvkrvnkvnnlmflrfjrkfvkvnkvn:wq!
 nmnklknvrkvgnm
 
 fgvkfkjvnjkf/
