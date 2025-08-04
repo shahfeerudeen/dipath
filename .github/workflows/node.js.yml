@@ -32,7 +32,7 @@ jobs:
       - name: ⚙️ Build (if present)
         run: npm run build --if-present
 
-      # You can disable this if unsure it's needed:
+      # Optional: Enable tests if applicable
       # - name: 🧪 Run Tests
       #   run: npm test
 
@@ -57,13 +57,13 @@ jobs:
           npm run build
 
       - name: 🚀 Deploy to Remote Server
-uses: appleboy/scp-action@v0.1.7
-with:
-  host: ${{ secrets.SSH_HOST }}
-  username: ${{ secrets.SSH_USER }}
-  key: ${{ secrets.SSH_KEY }}
-  port: 2722                    # ← add this line
-  source: "dist"
-  target: "/var/www/html/Tripath_Logistics_FESS"
-  strip_components: 0
-  rm: true
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 2722
+          source: "dist"
+          target: "/var/www/html/Tripath_Logistics_FESS"
+          strip_components: 0
+          rm: true
