@@ -56,8 +56,9 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PASSWORD }}
+          username: ${{ secrets.SSH_USER }} 
+          key: ${{ secrets.SSH_KEY}}
+          fingerprint: "SHA256:WhZh/XfgdE1U0D04TpQ+YnzDzrWDXBtcQP/e5FDnXWo"
           port: 2722
           source: "dist"
           target: "/var/www/html/Tripath_Logistics_FESS"
