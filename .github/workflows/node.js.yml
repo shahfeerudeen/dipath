@@ -64,4 +64,5 @@ jobs:
           target: "/var/www/html/Tripath_Logistics_FESS"
           strip_components: 0
           rm: true
+          debug: true
           
