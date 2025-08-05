@@ -58,10 +58,11 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
+          fingerprint: ${{ secrets.SSH_FINGERPRINT }}
           port: 2722
           source: "dist"
           target: "/var/www/html/Tripath_Logistics_FESS"
           strip_components: 0
           rm: true
-          debug: true
+          
           
