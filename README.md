@@ -11,10 +11,10 @@ ekfneklm
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
+```jsd
 export default tseslint.config({
   extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
+    // Remove ...tseslint.configs.recommended and replace with thisv
     ...tseslint.configs.recommendedTypeChecked,
     // Alternatively, use this for stricter rules
     ...tseslint.configs.strictTypeChecked,
