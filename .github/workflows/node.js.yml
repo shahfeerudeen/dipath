@@ -33,11 +33,11 @@ jobs:
         run: npm run build --if-present
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-
-    steps:
+      runs-on: ubuntu-latest
+      needs: build
+      if: github.ref == 'refs/heads/main'
+    
+      steps:
       - name: ⬇️ Checkout Code
         uses: actions/checkout@v4
 
@@ -56,12 +56,11 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
-          port: 2722
-          username: ${{ secrets.SSH_USER }} 
-          key: ${{ secrets.SSH_KEY}}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
           source: "dist"
           target: "/var/www/html/Tripath_Logistics_FESS"
           strip_components: 0
           rm: true
-          
-          
+
