@@ -22,38 +22,33 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
             set -e
             export DEPLOY_DIR="/home/ubuntu/cicd"
             export WEB_DIR="/var/www/html"
             export TIMESTAMP=$(date +"%d_%m_%Y_%H_%M")
-
             echo "✅ Checking Node & NPM"
             which node || true
             which npm || true
             node -v || true
             npm -v || true
-
             echo "📁 Backing up current version"
             cd $DEPLOY_DIR
             if [ -d Tripath_Logistics_FE ]; then
               mv Tripath_Logistics_FE Tripath_Logistics_FE_$TIMESTAMP
             fi
-
             echo "📥 Cloning repository"
             git clone -b main https://github.com/YeeJai/Tripath_Logistics_FE.git $DEPLOY_DIR/Tripath_Logistics_FE
-
             echo "📦 Installing dependencies & Building"
             cd $DEPLOY_DIR/Tripath_Logistics_FE
             rm -rf node_modules
             npm cache clean --force
             npm install
             NODE_OPTIONS=--max-old-space-size=4096 npm run build
-
             echo "🛠 Deploying build to web directory"
             cd $WEB_DIR
             sudo rm -rf Tripath_Logistics_FE
             sudo cp -r $DEPLOY_DIR/Tripath_Logistics_FE/dist ./Tripath_Logistics_FE
-
             echo "🚀 Deployment Successful"
