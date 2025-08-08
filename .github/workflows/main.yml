@@ -40,7 +40,7 @@ jobs:
               mv Tripath_Logistics_FE Tripath_Logistics_FE_$TIMESTAMP
             fi
             echo "📥 Cloning repository"
-            git clone -b main https://github.com/YeeJai/Tripath_Logistics_FE.git $DEPLOY_DIR/Tripath_Logistics_FE
+            git clone -b main https://github.com/shahfeerudeen/dipath.git $DEPLOY_DIR/Tripath_Logistics_FE
             echo "📦 Installing dependencies & Building"
             cd $DEPLOY_DIR/Tripath_Logistics_FE
             rm -rf node_modules
